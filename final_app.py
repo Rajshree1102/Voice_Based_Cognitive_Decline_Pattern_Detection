@@ -6,9 +6,9 @@ from cognitive_decline_detection import detect_cognitive_decline
 st.set_page_config(page_title="Cognitive Decline Detection", layout="centered")
 
 st.title("Voice-Based Cognitive Decline Detection")
-st.markdown("Upload a `.wav` file to analyze cognitive speech patterns for early decline detection.")
+st.markdown("Upload a `.wav` and '.mp3' file to analyze cognitive speech patterns for early decline detection.")
 
-uploaded_file = st.file_uploader("🎙 Upload an audio file", type=["wav"])
+uploaded_file = st.file_uploader("🎙 Upload an audio file", type=["wav", ".mp3"])
 
 if uploaded_file is not None:
     # Save uploaded file
